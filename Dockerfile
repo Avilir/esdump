@@ -22,7 +22,7 @@ RUN pip3 install elasticsearch
 RUN git clone https://github.com/shinexia/elasticsearch-dump.git
 RUN cd elasticsearch-dump ; go build
 WORKDIR /elasticsearch-dump 
-COPY elasticsearch.py /elasticsearch-dump/
+COPY *.py /elasticsearch-dump/
 
 #RUN pip3 install -r requirements.txt
 
