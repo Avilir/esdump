@@ -1,0 +1,2 @@
+# esdump
+Elasticsearch dumper
