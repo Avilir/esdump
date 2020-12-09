@@ -87,7 +87,7 @@ def run_command(cmd, **kwargs):
         kwargs[key] = subprocess.PIPE
 
     print(f"Going to run {cmd} with timeout of 600 sec.")
-    cp = subprocess.run(command, timeout=600, **kwargs)
+    cp = subprocess.run(command, **kwargs)
     output = cp.stdout.decode()
     err = cp.stderr.decode()
     # exit code is not zero
