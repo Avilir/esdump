@@ -136,7 +136,7 @@ def main():
     with tarfile.open(res_file, "w:gz") as tar:
         tar.add(base_path, arcname=os.path.basename(base_path))
 
-    print(f"ES dump is done. all data in the file : {res_file}")
+    print(f"ES dump is done. All data are in the file {res_file}")
 
 
 if __name__ == "__main__":
